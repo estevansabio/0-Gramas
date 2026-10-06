@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.isometra-regular {
+  font-family: "Isometra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* estruturação header */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    padding: 37px 20px;
+    border-radius: 10px;
+    gap: 65px;
+
+}
+
+header .logo{
+    margin-left: 30px;
+    font-family: "isometra", serif;
+      font-size: 3rem;          
+      font-weight: 200;
+      color: #A8DCAB;             
+      text-transform: uppercase;
+      background: transparent;  
+      display: inline-block;
+      user-select: none;
+      animation: flutua 3s ease-in-out infinite;
+    }
+
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 70px;
+    padding: 0 150px;
+}
+
+nav a {
+    color: #A8DCAB;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 25px;
+    display: inline-block;
+    font-weight: 200;
+}
+
+nav a:hover {
+    color: black;
+    transform: scale(1.10);
+}
+
+/* botao cadastre-se */
+header .cadastrar {
+    margin-left: 50px;
+    background-color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+}
+
+header .cadastrar a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header .cadastrar:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+header .cadastrar:hover a {
+    color: white;
+}
+
+/* botao login */
+header button {
+    margin-left: -45px;
+    background-color: #A8DCAB;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header button a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header button:hover {
+    background-color: #89c58d;
+    transform: scale(1.05);
+}
+
+/* /estruturação header */
+
+/* estruturação site */
+
+.divisor {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #89c58d, transparent);
+    margin: 5px 0;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+    font-weight: 15px;
+}
+
+h1 span {
+    font-size: 40px;
+    color: #7ea680;
+    font-weight: 30px;
+}
+
+.descricao {
+    color: #717171;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.descricao span {
+    display: block;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 40px 493px;
+}
+
+h3 span {
+    color: #7ea680;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 20px;
+    border: 2px solid #e0e0e0;
+    width: 700px;
+    transition: all 0.3s ease;
+    margin: 40px auto;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    width: 100%;
+    color: #333;
+}
+
+.search-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.caixa {
+    background-color: #e8f3e9;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+    height: 275px;
+}
+
+.caixa h3 {
+    margin: 20px -10px;
+    font-size: 20px;
+    color: #2c3e35;
+}
+
+.caixa p {
+    margin: 25px 15px;
+    text-align: center;
+    color: #676767;
+}
+
+h2 {
+    font-size: 80px;
+    margin: 100px 200px;
+}
+
+h2 span {
+    font-size: 90px;
+
+    color: #7ea680;
+}
+
+.container-bebidas {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.container-bebidas h2 {
+    font-size: 50px;
+    margin-left: 5px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.flex-produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    width: 100%;
+}
+
+.bebida {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33.33% - 20px);
+    min-height: 400px;
+    transition: all 0.3s ease;
+}
+.bebida:hover{
+    transform: scale(1.10);
+}
+
+.bebida img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.bebida h3 {
+    font-size: 25px;
+    margin-top: -5px;
+    margin: 0 -10px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.bebida p {
+    font-size: 12px;
+    color: #605f5f;
+    line-height: 1.5;
+}
+
+strong {
+    
+    font-size: 30px;
+}
+.compra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+.bebida button {
+    background-color: white;
+    border: 2px solid black;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;  
+}
+.bebida button a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.bebida button:hover {
+    background-color: black;
+}
+
+.bebida button:hover a {
+    color: white;
+}
+
+/* footer */
+footer{
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 100px;
+}
+footer .top-footer button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+  color: #fff;
+  font-size: 24px;
+  cursor:pointer;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+footer .top-footer button:hover{
+background-color: #fff;
+color: black
+}
+footer .middle-footer{
+  margin: 20px 0;
+}
+footer .middle-footer a{
+color: #fff;
+margin: 0 15px;
+}
+footer .bottom-footer{
+border-top: 2px solid white;
+}
+footer .bottom-footer p{
+  color: white;
+  margin-top: 10px;
+}
+
+@keyframes flutua{
+    0%,100%{transform: translateY(0);}
+    50%{transform: translateY(-15px);}
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+  header .logo {
+    margin-left: 0;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  nav {
+    padding: 0;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  header .cadastrar {
+    margin-left: 0;
+    width: 90%;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  header button {
+    margin-left: 0;
+    width: 90%;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+
+  h1 span {
+    font-size: 26px;
+    display: block;
+    margin-top: 5px;
+  }
+
+  .descricao {
+    font-size: 14px;
+    padding: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .caixa {
+    width: 100%;
+    height: auto;
+    padding: 20px 15px;
+  }
+
+  .caixa h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .caixa p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  h3 {
+    margin: 30px 0 15px 0;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .search-box {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .search-txt {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin: 40px 15px 20px 15px;
+    text-align: center;
+  }
+
+  h2 span {
+    font-size: 36px;
+  }
+
+  .container-bebidas {
+    padding: 0 15px;
+    margin: 20px auto;
+  }
+
+  .container-bebidas h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .flex-produtos {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .bebida {
+    width: 100%;
+    max-width: 350px;
+    min-height: auto;
+  }
+
+  .bebida:hover {
+    transform: none; 
+  }
+
+  .bebida h3 {
+    margin: 10px 0;
+  }
+
+  .compra {
+    margin-top: 20px;
+  }
+
+  strong {
+    font-size: 24px;
+  }
+
+
+  footer {
+    margin-top: 50px;
+    padding: 25px 15px;
+  }
+
+  footer .top-footer button {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    margin: 0 5px;
+  }
+
+  footer .middle-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  footer .middle-footer a {
+    margin: 0;
+  }
+
+  footer .bottom-footer p {
+    font-size: 12px;
+  }
+}
